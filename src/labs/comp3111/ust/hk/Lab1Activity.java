@@ -8,5 +8,19 @@ public class Lab1Activity {
 	for (int i: arr)
 		sum+=i;
 	System.out.println(String.format("Sum of the numbers is %d", sum));
+	int min=arr[0];
+	for (int i = 0; i < arr.length; i++) {
+		if ( arr[i] <= min) {
+			min = arr[i];
+		}
+	}
+	int max=arr[0];
+	for (int i = 0; i < arr.length; i++) {
+		if ( arr[i] >= max) {
+			max = arr[i];
+		}
+	}
+	System.out.print(String.format("Min = %d", min));
+	System.out.println(String.format("; Max = %d", max));
 	}
 }
